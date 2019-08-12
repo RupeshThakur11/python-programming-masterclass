@@ -1,4 +1,4 @@
-#!/usr/bin/python env
+#!/usr/bin/env python3
 
 """
 Create a list of items (you may use either strings or numbers in the list),

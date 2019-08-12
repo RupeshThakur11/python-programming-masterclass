@@ -1,4 +1,4 @@
-#!/usr/bin/python env
+#!/usr/bin/env python3
 
 """
 Given the tuple below that represents the Imelda May album "More Mayhem", write

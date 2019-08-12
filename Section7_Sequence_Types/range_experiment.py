@@ -1,4 +1,4 @@
-#!/usr/bin/python env
+#!/usr/bin/env python3
 
 """
 Experiment with different ranges and slices to get a feel for how they work.

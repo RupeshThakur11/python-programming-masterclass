@@ -1,4 +1,4 @@
-#!/usr/bin/python env
+#!/usr/bin/env python3
 
 """
 # add to the program below so that if it finds a meal without spam
