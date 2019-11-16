@@ -11,11 +11,14 @@ new_email = "update@update.com"
 phone_num = input("Input phone number ")
 
 # update_sql = "UPDATE contacts SET email = 'update@update.com' WHERE email = 1234"
+# update_sql = "UPDATE contacts SET email = '{}' WHERE email = {}".format(new_email, phone_num)
 update_sql = "UPDATE contacts SET email = ? WHERE phone = ?"  # placement holder helps against sql injections
 print(update_sql)
 
 update_cursor = db.cursor()
-update_cursor.execute(update_sql, (new_email, phone_num))  # can execute only 1 statement at a time, executescript can do multiple
+# execute - only 1 statement at a time, executescript - can do multiple
+# pass a tuple with the vars that need to be substituted
+update_cursor.execute(update_sql, (new_email, phone_num))
 print("{} rows updated".format(update_cursor.rowcount))
 
 print()
